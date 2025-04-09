@@ -24,7 +24,12 @@ public class Library {
     }  
   
     public void addPatron(Patron patron) {  
-        patrons.add(patron);  
+        for (Patron p : patrons) {
+            if (p.getName().equalsIgnoreCase(patron.getName())) {
+                throw new IllegalArgumentException("El patron ya está registrado.");
+            }
+        }
+        patrons.add(patron);
     }  
   
     public boolean checkOutBook(Patron patron, Book book, int daysToDue) {  
