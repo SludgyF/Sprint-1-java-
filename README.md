@@ -1,4 +1,5 @@
-# UnitTesting Simple Application using unit testing with JUnitt  
+# UnitTesting 
+Simple Application using unit testing with JUnit
 # Sprint-1-java  
 
 **Integrantes del equipo:**  
