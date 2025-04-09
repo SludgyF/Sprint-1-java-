@@ -13,11 +13,11 @@ public class Book {
 <span class="fc" id="L13">    }  </span>
   
     public String getTitle() {  
-<span class="nc" id="L16">        return title;  </span>
+<span class="fc" id="L16">        return title;  </span>
     }  
   
     public String getAuthor() {  
-<span class="nc" id="L20">        return author;  </span>
+<span class="fc" id="L20">        return author;  </span>
     }  
   
     public boolean isCheckedOut() {  
@@ -25,7 +25,7 @@ public class Book {
     }  
   
     public LocalDate getDueDate() {  
-<span class="nc" id="L28">        return dueDate;  </span>
+<span class="fc" id="L28">        return dueDate;  </span>
     }  
   
     public void checkOut(int daysToDue) {  
@@ -39,10 +39,10 @@ public class Book {
 <span class="fc" id="L39">    }  </span>
 
     public void setDueDate(LocalDate dueDate) {  
-<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (isCheckedOut) {  </span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (isCheckedOut) {  </span>
 <span class="fc" id="L43">            this.dueDate = dueDate; // Set the due date if the book is checked out  </span>
         } else {  
-<span class="nc" id="L45">            throw new IllegalStateException(&quot;Cannot set due date for a book that is not checked out.&quot;);  </span>
+<span class="fc" id="L45">            throw new IllegalStateException(&quot;Cannot set due date for a book that is not checked out.&quot;);  </span>
         }  
 <span class="fc" id="L47">    }  </span>
 

@@ -11,23 +11,23 @@ public class Patron {
 <span class="fc" id="L11">    }  </span>
   
     public String getName() {  
-<span class="nc" id="L14">        return name;  </span>
+<span class="fc" id="L14">        return name;  </span>
     }  
   
     public List&lt;Book&gt; getCheckedOutBooks() {  
-<span class="nc" id="L18">        return checkedOutBooks;  </span>
+<span class="fc" id="L18">        return checkedOutBooks;  </span>
     }  
   
     public void checkOutBook(Book book) {  
-<span class="nc" id="L22">        checkedOutBooks.add(book);  </span>
-<span class="nc" id="L23">    }  </span>
+<span class="fc" id="L22">        checkedOutBooks.add(book);  </span>
+<span class="fc" id="L23">    }  </span>
   
     public void returnBook(Book book) {  
-<span class="nc" id="L26">        checkedOutBooks.remove(book);  </span>
-<span class="nc" id="L27">    }  </span>
+<span class="fc" id="L26">        checkedOutBooks.remove(book);  </span>
+<span class="fc" id="L27">    }  </span>
   
     public boolean hasCheckedOutBook(Book book) {  
-<span class="nc" id="L30">        return checkedOutBooks.contains(book);  </span>
+<span class="fc" id="L30">        return checkedOutBooks.contains(book);  </span>
     }  
 }  
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
